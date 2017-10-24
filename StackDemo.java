@@ -35,7 +35,8 @@
       
      public static void main(String[] args) {  
       StackDemo stackDemo = new StackDemo();  
-      
+     
+      stackDemo.push(100); 
       stackDemo.pop();  
       stackDemo.push(23);  
       stackDemo.push(2);  
