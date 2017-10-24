@@ -172,7 +172,7 @@ public class LinkedStackImplement
                 ls.display();
                 break;                        
             default : 
-                System.out.println("Wrong Entry \n ");
+                System.out.println("Invalid choice.\n ");
                 break;
             }           
           /* display stack */    
