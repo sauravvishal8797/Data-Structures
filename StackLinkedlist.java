@@ -2,7 +2,7 @@
  * Java Program to Implement Stack using Linked List
  */
  
-import java.util.*;
+import java.util.Scanner;
  
 /*  Class Node  */
 class Node
@@ -177,7 +177,7 @@ public class LinkedStackImplement
             }           
           /* display stack */    
             ls.display();            
-            System.out.println("\nDo you want to continue (Type y or n) \n");
+            System.out.println("\nDo you want to continue (Type Y or N) \n");
             ch = scan.next().charAt(0);       
  
         } while (ch == 'Y'|| ch == 'y');                 
