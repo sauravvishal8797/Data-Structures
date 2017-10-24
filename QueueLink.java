@@ -68,13 +68,13 @@ public class Test
     public static void main(String[] args) 
     {
         Queue q=new Queue();
-        q.enqueue(10);
-        q.enqueue(20);
-        q.dequeue();
-        q.dequeue();
-        q.enqueue(30);
-        q.enqueue(40);
-        q.enqueue(50);
+        q.enqueue(1);
+        q.enqueue(2);
+        q.enqueue(3);
+	q.dequeue();
+        q.enqueue(4);
+	q.dequeue();
+        q.enqueue(5);
          
         System.out.println("Dequeued item is "+ q.dequeue().key);
     }
