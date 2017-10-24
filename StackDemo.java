@@ -40,7 +40,12 @@
       stackDemo.push(23);  
       stackDemo.push(2);  
       stackDemo.push(73);  
-      stackDemo.push(21);  
+      stackDemo.push(21);
+      stackDemo.push(53);
+      stackDemo.push(22);
+      stackDemo.push(53);
+      stackDemo.push(74);
+      stackDemo.push(13);  
       stackDemo.pop();  
       stackDemo.pop();  
       stackDemo.pop();  
