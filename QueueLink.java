@@ -6,6 +6,10 @@ class QNode
     int key;
     QNode next;
      
+    public QNode(){
+    	key= 0;
+    	next=null;
+    }
     // constructor to create a new linked list node
     public QNode(int key) {
         this.key = key;
