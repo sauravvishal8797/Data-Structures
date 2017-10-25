@@ -1,0 +1,77 @@
+package bstsample;
+
+public class BSTManager {
+	public BSTNode search(int toSearch, BSTNode root) {
+		if(root == null)
+			return null;
+		
+		if(root.value == toSearch) {
+			return root;
+		}
+		if(root.value > toSearch) {
+			return search(toSearch, root.left);
+		}else {
+			return search(toSearch, root.right);
+		}
+	}
+	
+	public BSTNode insert(int toInsert, BSTNode root) {
+		if(root == null) {
+			System.out.println("Inserted as root");
+			return new BSTNode(toInsert, null, null);
+		}
+		if(root.value > toInsert) {
+			if(root.left == null) {
+				//insert here
+				BSTNode newNode = new BSTNode(toInsert, null, null);
+				root.left = newNode;
+				System.out.println("Inserted as child");
+				return newNode;
+			}
+			return insert(toInsert, root.left);
+		}else {
+			if(root.right == null) {
+				//insert here
+				BSTNode newNode = new BSTNode(toInsert, null, null);
+				root.right = newNode;
+				System.out.println("Inserted as child");
+				return newNode;
+			}
+			return insert(toInsert, root.right);
+		}
+	}
+	
+	public void inorderTraversal(BSTNode root) {
+		if (root == null)
+	        return;
+	 
+		inorderTraversal(root.left);
+	 
+		System.out.print(root.value+"  ");
+		
+		inorderTraversal(root.right);
+	}
+	
+	public void preorderTraversal(BSTNode root) {
+		if (root == null)
+	        return;
+	 
+		System.out.print(root.value+"  ");
+		
+		preorderTraversal(root.left);
+	 
+		preorderTraversal(root.right);
+	}
+
+	public void postorderTraversal(BSTNode root) {
+		if (root == null)
+	        return;
+		
+		postorderTraversal(root.left);
+	 
+		postorderTraversal(root.right);
+		
+		System.out.print(root.value+"  ");
+	}
+
+}
