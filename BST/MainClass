@@ -1,0 +1,37 @@
+package bstsample;
+
+public class MainClass {
+
+	public static void main(String[] args) {
+	/*
+	 * Creating a BST that looks like:
+	 *             6
+	 *          4     9
+	 *        3   5 7   10
+	 */	
+		BSTManager bstManager = new BSTManager();
+		
+		BSTNode root = bstManager.insert(6, null);
+		bstManager.insert(4, root);
+		bstManager.insert(3, root);
+		bstManager.insert(5, root);
+		bstManager.insert(9, root);
+		bstManager.insert(10, root);
+		bstManager.insert(7, root);
+		
+		System.out.print("Inorder traversal: ");
+		bstManager.inorderTraversal(root);
+		System.out.println();
+		System.out.print("Preorder traversal: ");
+		bstManager.preorderTraversal(root);
+		System.out.println();
+		System.out.print("Postorder traversal: ");
+		bstManager.postorderTraversal(root);
+		System.out.println();
+		
+		BSTNode bstNode = bstManager.search(4, root);
+		System.out.println("Left of 4 : "+bstNode.left.value);
+		System.out.println("Right of 4 : "+bstNode.right.value);
+	}
+	
+}
