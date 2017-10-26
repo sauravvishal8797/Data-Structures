@@ -3,13 +3,13 @@
      int arr[] = new int[capacity];  
      int top = -1;  
       
-     public void push(int pushedElement) {  
+     public void push(int p) {  
       if (top < capacity - 1) {  
        top++;  
-       arr[top] = pushedElement;  
-       System.out.println("Element " + pushedElement  
+       arr[top] = p;  
+       System.out.println("Element " + p  
          + " is pushed to Stack !");  
-       printElements();  
+       p();  
       } else {  
        System.out.println("Stack Overflow !");  
       }  
