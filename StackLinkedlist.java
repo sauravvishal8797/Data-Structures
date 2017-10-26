@@ -17,9 +17,9 @@ class Node
         data = 0;
     }    
     /*  Constructor  */
-    public Node(int d,Node n)
+    public Node(int i,Node n)
     {
-        data = d;
+        data = i;
         link = n;
     }    
     /*  Function to set link to next Node  */
