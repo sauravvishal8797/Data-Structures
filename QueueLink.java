@@ -25,11 +25,11 @@ class Queue
     }
       
     // Method to add an key to the queue.  
-    void enqueue(int key)
+    void enqueue(int k)
     {
          
         // Create a new LL node
-        QNode temp = new QNode(key);
+        QNode temp = new QNode(k);
       
         // If queue is empty, then new node is front and rear both
         if (this.rear == null)
