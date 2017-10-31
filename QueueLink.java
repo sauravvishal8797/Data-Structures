@@ -3,7 +3,7 @@
 // A linked list (LL) node to store a queue entry
 class QNode
 {
-    int key;
+    int key = 0;
     QNode next;
      
     // constructor to create a new linked list node
@@ -52,7 +52,7 @@ class Queue
       
         // Store previous front and move front one node ahead
         QNode temp = this.front;
-        this.front = this.front.next;
+        //this.front = this.front.next;
       
         // If front becomes NULL, then change rear also as NULL
         if (this.front == null)
