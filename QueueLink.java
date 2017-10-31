@@ -3,7 +3,7 @@
 // A linked list (LL) node to store a queue entry
 class QNode
 {
-    int key;
+    int key = 0;
     QNode next;
      
     // constructor to create a new linked list node
