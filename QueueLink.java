@@ -52,7 +52,7 @@ class Queue
       
         // Store previous front and move front one node ahead
         QNode temp = this.front;
-        this.front = this.front.next;
+        //this.front = this.front.next;
       
         // If front becomes NULL, then change rear also as NULL
         if (this.front == null)
