@@ -47,7 +47,7 @@ class Node
 /*  Class linkedStack  */
 class linkedStack
 {
-    protected Node top ;
+    protected Node top = null ;
     protected int size ;
  
     /*  Constructor  */

@@ -18,7 +18,7 @@ class QNode
 //last node of LL
 class Queue
 {
-    QNode front, rear;
+    QNode front = null, rear = null;
       
     public Queue() {
         this.front = this.rear = null;

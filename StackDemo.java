@@ -1,5 +1,5 @@
     public class StackDemo {  
-     private static final int capacity = 3;  
+     private static final int capacity = 7;  
      int arr[] = new int[capacity];  
      int top = -1;  
       
