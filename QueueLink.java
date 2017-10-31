@@ -3,8 +3,8 @@
 // A linked list (LL) node to store a queue entry
 class QNode
 {
-    int key;
-    QNode next;
+    int key = 0;
+    QNode next = null;
      
     // constructor to create a new linked list node
     public QNode(int key) {
