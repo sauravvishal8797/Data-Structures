@@ -4,7 +4,7 @@
 class QNode
 {
     int key = 0;
-    QNode next;
+    QNode next = null;
      
     // constructor to create a new linked list node
     public QNode(int key) {
