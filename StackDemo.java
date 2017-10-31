@@ -1,7 +1,7 @@
     public class StackDemo {  
      private static final int capacity = 3;  
      int arr[] = new int[capacity];  
-     int top = -1;  
+     int top = 0;  
       
      public void push(int pushedElement) {  
       if (top < capacity - 1) {  
