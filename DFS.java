@@ -10,7 +10,7 @@ class Graph
     
     private LinkedList<Integer> adj[]; 
   
-    // Constructor 
+    
     Graph(int v) 
     { 
         V = v; 
@@ -19,7 +19,7 @@ class Graph
             adj[i] = new LinkedList(); 
     } 
   
-    //Function to add an edge into the graph 
+   
     void addEdge(int v, int w) 
     { 
         adj[v].add(w);  // Add w to v's list. 
